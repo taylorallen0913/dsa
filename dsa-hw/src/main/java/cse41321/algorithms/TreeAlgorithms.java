@@ -19,7 +19,6 @@ public final class TreeAlgorithms {
         if (node == null) {
             return;
         }
-
         visitor.visit(node.getData());
         doTraversePreOrder(node.getLeft(), visitor);
         doTraversePreOrder(node.getRight(), visitor);
